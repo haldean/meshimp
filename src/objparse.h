@@ -1,11 +1,10 @@
-#ifndef __CRENDER_OBJPARSE_H__
-#define __CRENDER_OBJPARSE_H__
+#ifndef __OBJPARSE_H__
+#define __OBJPARSE_H__
 
 #include <istream>
 
-#include "scene.h"
-#include "geometry.h"
+#include "mesh.h"
 
-void loadObjFile(istream& input, Scene& scene, Material* material);
+void loadObjFile(istream& input, mesh& mesh);
 
 #endif
