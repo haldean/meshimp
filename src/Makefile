@@ -6,10 +6,10 @@ UNAME=$(shell uname)
 
 ifeq ($(UNAME), Darwin)
 CC=clang++
-LDFLAGS=-lm -framework OpenGL -framework GLUT -pg
+LDFLAGS=-lm -framework OpenGL -framework GLUT
 else
 CC=g++
-LDFLAGS=-L/usr/local/lib -L/usr/X11/lib -pg
+LDFLAGS=-L/usr/local/lib -L/usr/X11/lib
 endif
 
 all: $(SOURCES) $(BINARY)

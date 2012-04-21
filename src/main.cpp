@@ -140,9 +140,9 @@ void specialKeys(unsigned char key, int x, int y) {
     globalMesh.calculateNormals(ANGLE_WEIGHTS);
  
   } else if (key == ',') {
-    simplifyMesh(globalMesh, 0.75);
+    simplifyMesh(globalMesh, 0.5);
   } else if (key == '.') {
-    simplifyMesh(globalMesh, 0.9);
+    simplifyMesh(globalMesh, 0.75);
   }
 
   // Refresh the Window

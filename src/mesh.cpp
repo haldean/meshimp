@@ -47,6 +47,7 @@ void mesh::calculateNormals(normal_mode mode) {
         (*vit)->normal.setZero();
       } else {
         vertex *v = *vit;
+        if (!v->normal.isZero()) continue;
 
         vector<face*> neighbors;
         face* loopf = f;
